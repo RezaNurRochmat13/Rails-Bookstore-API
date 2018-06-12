@@ -4,4 +4,10 @@ class BooksController < ApplicationController
         @book = Book.all
         render json: @book
     end
+
+    def singleBooks
+        @book = Book.find(params[:id])
+        render json: @book
+    end
+
 end
