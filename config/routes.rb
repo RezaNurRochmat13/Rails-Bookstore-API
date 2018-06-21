@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'books' => 'books#allBooks'
   get 'books/:id' => 'books#singleBooks'
   post 'books' => 'books#createNewBooks'
+  patch 'books/:id' => 'books#updateBooks'
+  delete 'books/:id' => 'books#deleteBooks'
 end
